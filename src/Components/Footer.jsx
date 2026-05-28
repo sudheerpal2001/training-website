@@ -48,6 +48,74 @@ const socialLinks = [
   { icon: FaWhatsapp,  title: "WhatsApp",  href: "https://wa.me/919198483820", hoverBg: "#25d366" },
 ];
 
+const columns = [
+  {
+    title: "Our Popular Training Programs",
+    links: [
+      { label: "Best Summer Training for CS Students in Kanpur", href: "https://thedigicoders.com/courses/best-summer-training-for-cs-students-in-lucknow" },
+      { label: "Best Summer Training for EC Students in Kanpur", href: "https://thedigicoders.com/courses/best-summer-training-for-ec-students-in-lucknow" },
+      { label: "Best Summer Training for Electrical Students in Kanpur", href: "https://thedigicoders.com/courses/best-summer-training-for-electrical-students-in-lucknow" },
+      { label: "Best Summer Training for Mechanical Engineering Students in Kanpur", href: "https://thedigicoders.com/courses/best-summer-training-for-mechanical-engineering-students-in-lucknow" },
+      { label: "Corporate Training Programs in Kanpur", href: "https://thedigicoders.com/courses/corporate-training-programs-in-lucknow" },
+      { label: "Best Apprenticeship Program in Kanpur", href: "https://thedigicoders.com/courses/best-apprenticeship-program-in-lucknow" },
+      { label: "Syllabus-Based Training in Kanpur", href: "https://thedigicoders.com/courses/syllabus-based-training-in-lucknow" },
+      { label: "On-Campus Training in Kanpur", href: "https://thedigicoders.com/courses/on-campus-training-in-lucknow" },
+      { label: "Top Courses for Data Analytics Course in Kanpur", href: "https://thedigicoders.com/courses/top-company-for-data-analytics-course-in-lucknow" },
+    ],
+  },
+  {
+    title: "More Training Links in Kanpur",
+    links: [
+      { label: "Winter Training in Kanpur", href: "https://thedigicoders.com/courses/winter-training-in-lucknow" },
+      { label: "Industrial Training in Kanpur", href: "https://thedigicoders.com/courses/industrial-training-in-lucknow" },
+      { label: "Vocational Training in Kanpur", href: "https://thedigicoders.com/courses/vocational-training-in-lucknow" },
+      { label: "PD & Skills Development in Kanpur", href: "https://thedigicoders.com/courses/pd-skills-development-in-lucknow" },
+      { label: "JavaScript Training in Kanpur", href: "https://thedigicoders.com/courses/javascript-training-in-lucknow" },
+      { label: "HTML & CSS Training in Kanpur", href: "https://thedigicoders.com/courses/html-css-training-in-lucknow" },
+      { label: "MERN Apprenticeship Training", href: "https://thedigicoders.com/courses/mern-apprenticeship-training" },
+      { label: "MERN Fullstack Program in Kanpur", href: "https://thedigicoders.com/courses/mern-fullstack-program-in-Kanpur" },
+      { label: "Best Company for Dot Net Core Training in Kanpur", href: "https://thedigicoders.com/courses/best-company-for-dot-net-core-training-in-Kanpur" },
+      { label: "100% Job Assistance Program in Kanpur", href: "https://thedigicoders.com/courses/100-job-assistance-program-in-Kanpur" },
+      { label: "Civil Engineering Summer Training", href: "https://thedigicoders.com/courses/civil-engineering-summer-training" },
+    ],
+  },
+  {
+    title: "Advanced Training Programs in Kanpur",
+    links: [
+      { label: "Best Summer Training on MERN", href: "https://thedigicoders.com/courses/best-summer-training-on-mern" },
+      { label: "Best Summer Training on Python", href: "https://thedigicoders.com/courses/best-summer-training-on-python" },
+      { label: "Best Summer Training on PHP Laravel", href: "https://thedigicoders.com/courses/best-summer-training-on-php-laravel" },
+      { label: "Best Summer Training on Java", href: "https://thedigicoders.com/courses/best-summer-training-on-java" },
+      { label: "Best Summer Training on DotNet", href: "https://thedigicoders.com/courses/best-summer-training-on-dotnet" },
+      { label: "MSSQL Training in Kanpur", href: "https://thedigicoders.com/courses/mssql-training-in-Kanpur" },
+      { label: "React JS Training in Kanpur", href: "https://thedigicoders.com/courses/react-js-training-in-Kanpur" },
+      { label: "Best Summer Training on Flutter", href: "https://thedigicoders.com/courses/best-summer-training-on-flutter" },
+      { label: "Best Summer Training on Android", href: "https://thedigicoders.com/courses/best-summer-training-on-android" },
+      { label: "AI Training in Kanpur", href: "https://thedigicoders.com/courses/ai-training-in-Kanpur" },
+      { label: "Machine Learning in Kanpur", href: "https://thedigicoders.com/courses/machine-learning-in-Kanpur" },
+      { label: "Graphics Designing in Kanpur", href: "https://thedigicoders.com/courses/graphics-designing-in-Kanpur" },
+    ],
+  },
+  {
+    title: "Most Top Courses in Kanpur",
+    links: [
+      { label: "Top Data Analytics Course in Kanpur", href: "https://thedigicoders.com/courses/top-data-analytics-course-in-Kanpur" },
+      { label: "Top Software Testing Course in Kanpur", href: "https://thedigicoders.com/courses/top-software-testing-course-in-Kanpur" },
+      { label: "Top MEAN Stack Course in Kanpur", href: "https://thedigicoders.com/courses/top-mean-stack-course-in-Kanpur" },
+      { label: "Top Ethical Hacking Course in Kanpur", href: "https://thedigicoders.com/courses/top-ethical-hacking-course-in-Kanpur" },
+      { label: "Top MERN Stack Course in Kanpur", href: "https://thedigicoders.com/courses/top-mern-stack-course-in-Kanpur" },
+      { label: "Top Node JS Course in Kanpur", href: "https://thedigicoders.com/courses/top-node-js-course-in-Kanpur" },
+      { label: "Top JavaScript Course in Kanpur", href: "https://thedigicoders.com/courses/top-javascript-course-in-Kanpur" },
+      { label: "Top HTML & CSS Course in Kanpur", href: "https://thedigicoders.com/courses/top-html-css-course-in-Kanpur" },
+      { label: "Top Digital Marketing Course in Kanpur", href: "https://thedigicoders.com/courses/top-digital-marketing-course-in-Kanpur" },
+      { label: "Top AI Course in Kanpur", href: "https://thedigicoders.com/courses/top-ai-course-in-Kanpur" },
+      { label: "Top Machine Learning Course in Kanpur", href: "https://thedigicoders.com/courses/top-machine-learning-course-in-Kanpur" },
+      { label: "Top Graphics Designing Course in Kanpur", href: "https://thedigicoders.com/courses/top-graphics-designing-course-in-Kanpur" },
+    ],
+  },
+];
+
+
 const handleScrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 const FooterHeading = ({ title }) => (
@@ -102,7 +170,6 @@ const Footer = () => {
       {/* ── Top Announcement Bar ── */}
       <div className="py-3 text-center text-white text-sm font-semibold tracking-wide overflow-hidden"
         style={{ background: 'linear-gradient(90deg, #0d1b2a, #1a2f1a, #0d1b2a)' }}>
-        {/* Orange + green gradient line on top */}
         <div className="absolute top-0 left-0 right-0 h-[3px]"
           style={{ background: 'linear-gradient(to right, #ff8c00, #2e7d32, #ff8c00)' }} />
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 px-4">
@@ -197,6 +264,36 @@ const Footer = () => {
         <div className="h-px" style={{ background: 'rgba(255,255,255,0.08)' }} />
       </div>
 
+      {/* Bottom Training Section */}
+      <section className="bg-[#0d1b2a] py-14 px-6 md:px-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {columns.map((col) => (
+            <div key={col.title}>
+              <h3 className="text-white font-bold text-lg mb-5 leading-snug">
+                {col.title}
+              </h3>
+              <ul className="space-y-2">
+                {col.links.map((item) => (
+                  <li key={item.label}>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-start gap-1.5 text-gray-300 text-sm leading-snug transition-colors duration-200 hover:text-orange-400"
+                    >
+                      <span className="mt-0.5 text-orange-500 font-bold text-base leading-none transition-colors duration-200 group-hover:text-orange-400">
+                        &gt;
+                      </span>
+                      <span>{item.label}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* ── Bottom Bar ── */}
       <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 flex-wrap">
         <p className="text-sm text-gray-500 font-medium">
@@ -216,6 +313,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+
+    
   );
 };
 

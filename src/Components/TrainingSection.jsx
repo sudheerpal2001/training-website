@@ -166,6 +166,7 @@ const RegisterBtn = ({ variant, link }) => {
         onMouseEnter={(e) => {
           e.currentTarget.style.background = "white";
           e.currentTarget.style.color = "#ff8c00";
+          e.currentTarget.style.border = "1px solid orange"
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.background = "#ff8c00";
@@ -187,6 +188,7 @@ const RegisterBtn = ({ variant, link }) => {
       onMouseEnter={(e) => {
         e.currentTarget.style.background = "white";
         e.currentTarget.style.color = "#2e7d32";
+        e.currentTarget.style.border = "1px solid green"
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.background = "#2e7d32";
@@ -211,46 +213,46 @@ const TrainingCard = ({
   <div
     className="
       group relative
-      bg-orange-50
+      bg-white
       text-black
       p-7 flex flex-col
       border border-gray-100
-      shadow-xl
+      shadow-2xl
       cursor-pointer
       transition-all duration-300
-      hover:-translate-y-1.5
+      hover:-translate-y-2.5
       rounded-[24px_4px_24px_4px]
     "
-    onMouseEnter={(e) => {
-      e.currentTarget.classList.remove(
-        "bg-orange-50",
-        "border-gray-100",
-        "rounded-[24px_4px_24px_4px]"
-      );
-      e.currentTarget.classList.add(
-        "bg-[#0d1b2a]",
-        "border-orange-500",
-        "rounded-[4px_24px_4px_24px]"
-      );
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.classList.remove(
-        "bg-[#0d1b2a]",
-        "border-orange-500",
-        "rounded-[4px_24px_4px_24px]"
-      );
-      e.currentTarget.classList.add(
-        "bg-orange-50",
-        "border-gray-100",
-        "rounded-[24px_4px_24px_4px]"
-      );
-    }}
+    // onMouseEnter={(e) => {
+    //   e.currentTarget.classList.remove(
+    //     "bg-orange-50",
+    //     "border-gray-100",
+    //     "rounded-[24px_4px_24px_4px]"
+    //   );
+    //   e.currentTarget.classList.add(
+    //     "bg-[#0d1b2a]",
+    //     "border-orange-500",
+    //     "rounded-[4px_24px_4px_24px]"
+    //   );
+    // }}
+    // onMouseLeave={(e) => {
+    //   e.currentTarget.classList.remove(
+    //     "bg-[#0d1b2a]",
+    //     "border-orange-500",
+    //     "rounded-[4px_24px_4px_24px]"
+    //   );
+    //   e.currentTarget.classList.add(
+    //     "bg-orange-50",
+    //     "border-gray-100",
+    //     "rounded-[24px_4px_24px_4px]"
+    //   );
+    // }}
   >
     {featured && <Badge />}
 
     <IconBox>{icon}</IconBox>
 
-    <h3 className="text-lg font-bold mb-2 text-[#1a1a1a] transition-colors duration-300 group-hover:text-white">
+    <h3 className="text-lg font-bold mb-2 text-[#1a1a1a] transition-colors duration-300 group-hover:text-black">
       {title}
     </h3>
 
@@ -258,16 +260,16 @@ const TrainingCard = ({
       className="
         inline-block text-xs font-medium
         px-3 py-1 rounded-md mb-3 w-fit
-        bg-gray-100 text-gray-500
+        bg-gray-100 text-gray-600
         transition-all duration-300
-        group-hover:bg-white/10
-        group-hover:text-orange-200
+        group-hover:bg-orange-100/20
+        group-hover:text-orange-400
       "
     >
       {audience}
     </span>
 
-    <p className="text-sm leading-relaxed flex-1 text-gray-500 transition-colors duration-300 group-hover:text-gray-300">
+    <p className="text-sm leading-relaxed flex-1 text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
       {description}
     </p>
 
