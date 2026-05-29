@@ -11,7 +11,6 @@ const trainingData = [
     audience: "For Polytechnic Diploma",
     description: "Practical skill development aligned with diploma curriculum.",
     featured: false,
-    btnVariant: "blue",
   },
   {
     id: 2,
@@ -24,7 +23,6 @@ const trainingData = [
     audience: "For CS/IT/Electronics",
     description: "Intensive 4-6 weeks summer program on latest technologies.",
     featured: false,
-    btnVariant: "blue",
   },
   {
     id: 3,
@@ -37,7 +35,6 @@ const trainingData = [
     audience: "Short-term Program",
     description: "Quick skill enhancement during winter break.",
     featured: false,
-    btnVariant: "blue",
   },
   {
     id: 4,
@@ -50,7 +47,6 @@ const trainingData = [
     audience: "For B.Tech/MCA Final Year",
     description: "Comprehensive 6-month industry exposure program.",
     featured: true,
-    btnVariant: "orange",
   },
   {
     id: 5,
@@ -63,7 +59,6 @@ const trainingData = [
     audience: "Govt. Approved",
     description: "Official apprenticeship programs with stipends.",
     featured: false,
-    btnVariant: "blue",
   },
   {
     id: 6,
@@ -76,7 +71,6 @@ const trainingData = [
     audience: "Live Project Based",
     description: "Work on real client projects under senior developers.",
     featured: true,
-    btnVariant: "orange",
   },
   {
     id: 7,
@@ -89,7 +83,6 @@ const trainingData = [
     audience: "Final Year Guidance",
     description: "End-to-end guidance for major academic projects.",
     featured: false,
-    btnVariant: "blue",
   },
   {
     id: 8,
@@ -102,7 +95,6 @@ const trainingData = [
     audience: "For B.Tech 1st-3rd Year",
     description: "Academic syllabus coverage with practical approach.",
     featured: false,
-    btnVariant: "blue",
   },
   {
     id: 9,
@@ -115,13 +107,11 @@ const trainingData = [
     audience: "For College Teachers",
     description: "FDPs on advanced tech stacks and industry trends.",
     featured: false,
-    btnVariant: "blue",
   },
 ];
 
-// ─────────── SUB-COMPONENTS ────────────
+// ─────────── SUB COMPONENTS ────────────
 
-// Featured badge
 const Badge = () => (
   <span
     className="absolute top-4 right-4 text-white text-xs font-semibold px-3 py-1 rounded-full tracking-wide"
@@ -131,156 +121,92 @@ const Badge = () => (
   </span>
 );
 
-// Icon wrapper
 const IconBox = ({ children }) => (
   <div
-    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-white/20 group-hover:text-white"
+    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-all duration-300"
     style={{ background: "#fff3e0", color: "#ff8c00" }}
   >
     {children}
   </div>
 );
 
-// Register button — ab link bhi accept karta hai
-const RegisterBtn = ({ variant}) => {
-  const base =
-    "mt-5 w-full py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-200 focus:outline-none block text-center";
-
-  if (variant === "orange") {
-    return (
-      <a
-        href="https://thedigicoders.com/registration"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={base}
-        style={{ background: "#ff8c00", color: "white" }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background = "white";
-          e.currentTarget.style.color = "#ff8c00";
-          e.currentTarget.style.border = "1px solid orange"
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = "#ff8c00";
-          e.currentTarget.style.color = "white";
-        }}
-      >
-        Register
-      </a>
-    );
-  }
-
-  return (
-    <a
-      href="https://thedigicoders.com/registration"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`${base} group-hover:bg-white`}
-      style={{ background: "#2e7d32", color: "white" }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.background = "white";
-        e.currentTarget.style.color = "#2e7d32";
-        e.currentTarget.style.border = "1px solid green"
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.background = "#2e7d32";
-        e.currentTarget.style.color = "white";
-      }}
-    >
-      Register
-    </a>
-  );
-};
-
-// Training card
+// Training Card
 const TrainingCard = ({
   icon,
   title,
   audience,
   description,
   featured,
-  btnVariant,
 }) => (
   <div
     className="
       group relative
       bg-white
-      text-black
       p-7 flex flex-col
       border border-gray-200
       shadow-2xl
-      cursor-pointer
       transition-all duration-300
-      hover:-translate-y-2.5
+      hover:-translate-y-2
       rounded-[24px_2px_24px_2px]
       hover:rounded-[2px_24px_2px_24px]
       hover:border-orange-500
     "
-    // onMouseEnter={(e) => {
-    //   e.currentTarget.classList.remove(
-    //     "bg-orange-50",
-    //     "border-gray-100",
-    //     "rounded-[24px_4px_24px_4px]"
-    //   );
-    //   e.currentTarget.classList.add(
-    //     "bg-[#0d1b2a]",
-    //     "border-orange-500",
-    //     "rounded-[4px_24px_4px_24px]"
-    //   );
-    // }}
-    // onMouseLeave={(e) => {
-    //   e.currentTarget.classList.remove(
-    //     "bg-[#0d1b2a]",
-    //     "border-orange-500",
-    //     "rounded-[4px_24px_4px_24px]"
-    //   );
-    //   e.currentTarget.classList.add(
-    //     "bg-orange-50",
-    //     "border-gray-100",
-    //     "rounded-[24px_4px_24px_4px]"
-    //   );
-    // }}
   >
     {featured && <Badge />}
 
     <IconBox>{icon}</IconBox>
 
-    <h3 className="text-lg font-bold mb-2 text-[#1a1a1a] transition-colors duration-300 group-hover:text-black">
+    <h3 className="text-lg font-bold text-[#1a1a1a] mb-2">
       {title}
     </h3>
 
     <span
       className="
-        inline-block text-xs font-medium
-        px-3 py-1 rounded-md mb-3 w-fit
+        inline-block w-fit
+        text-xs font-medium
+        px-3 py-1 rounded-md mb-3
         bg-gray-100 text-gray-600
-        transition-all duration-300
-        group-hover:bg-orange-100/20
-        group-hover:text-orange-400
       "
     >
       {audience}
     </span>
 
-    <p className="text-sm leading-relaxed flex-1 text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
+    <p className="text-sm leading-relaxed text-gray-600 flex-1">
       {description}
     </p>
 
-    {/* Har card ko uski apni link milti hai */}
-    <RegisterBtn variant={btnVariant} />
+    <a
+      href="https://thedigicoders.com/registration"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center gap-1.5 text-[13px] font-extrabold transition-all duration-200 mt-5 ${
+        featured
+          ? "text-orange-500 hover:text-orange-300"
+          : "text-[#0d1b2a] hover:text-orange-500"
+      }`}
+    >
+      Enroll Now
+      <span className="group-hover:translate-x-1 transition-transform inline-block">
+        →
+      </span>
+    </a>
   </div>
 );
 
 // ──────── TRAINING SECTION ──────────
+
 const TrainingSection = () => (
   <div>
     {/* Header */}
     <div className="text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-        Training &nbsp;Programs
+        Training Programs
       </h2>
+
       <div className="mx-auto mt-3 h-[2px] w-52 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
-      <p className="text-gray-500 text-base pt-3 md:text-lg">
-        Specially designed for Engineering Students &amp; Professionals
+
+      <p className="text-gray-500 text-base md:text-lg pt-3">
+        Specially designed for Engineering Students & Professionals
       </p>
     </div>
 
@@ -296,8 +222,6 @@ const TrainingSection = () => (
               audience={card.audience}
               description={card.description}
               featured={card.featured}
-              btnVariant={card.btnVariant}
-              registerLink={card.registerLink} 
             />
           ))}
         </div>
