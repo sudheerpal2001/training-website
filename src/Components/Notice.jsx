@@ -17,7 +17,7 @@ const Notice = () => {
             href="tel:+919720535155"
             className="whitespace-nowrap font-bold tracking-wide text-[11px] md:text-sm text-white hover:text-orange-400 transition-colors"
           >
-            +91 9720535155
+            +91 9198483820
           </a>
         </div>
 
@@ -36,23 +36,6 @@ const Notice = () => {
           </div>
         </div>
       </div>
-
-      {/* TICKER */}
-      <div className="overflow-hidden w-full md:flex-1">
-        <span
-          className="whitespace-nowrap inline-block text-[11px] md:text-xs font-medium"
-          style={{ color: '#ffd180', animation: 'notice-marquee 25s linear infinite' }}
-        >
-          🎓 Registrations Open for Training Session 2026–27 &nbsp;•&nbsp;
-          Toll Free: 1800-200-5802 &nbsp;•&nbsp;
-          B.Tech | Diploma | BCA | MCA &nbsp;•&nbsp;
-          CSE / IT / CE / EE &nbsp;&nbsp;•&nbsp;
-          Aliganj, Lucknow &nbsp;&nbsp;•&nbsp;
-          Yashodha Nagar, Kanpur &nbsp;&nbsp;•&nbsp; 
-          Gida Gorakhpur
-        </span>
-      </div>
-
       {/* RIGHT SECTION (Desktop Only) */}
       <div className="hidden md:flex items-center gap-4 md:ml-auto">
         {[

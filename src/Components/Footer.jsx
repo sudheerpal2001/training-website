@@ -62,6 +62,12 @@ const columns = [
       { label: "Syllabus-Based Training in Kanpur", href: "https://thedigicoders.com/courses/syllabus-based-training-in-lucknow" },
       { label: "On-Campus Training in Kanpur", href: "https://thedigicoders.com/courses/on-campus-training-in-lucknow" },
       { label: "Top Courses for Data Analytics Course in Kanpur", href: "https://thedigicoders.com/courses/top-company-for-data-analytics-course-in-lucknow" },
+      { label: "Software Testing Training in Kanpur", href: "https://thedigicoders.com/courses/software-testing-training-in-lucknow" },
+      { label: "Best Company for MEAN Stack Training in Kanpur", href: "https://thedigicoders.com/courses/best-company-for-mean-stack-training-in-lucknow" },
+      { label: "Best Company for MERN Stack Training in Kanpur", href: "https://thedigicoders.com/courses/best-company-for-mern-stack-training-in-lucknow" },
+      { label: "Top Company for Summer Training on MERN Full Stack", href: "https://thedigicoders.com/courses/top-company-for-summer-training-on-mern-full-stack" },
+      { label: "Best Fullstack NodeJS Training in Kanpur", href: "https://thedigicoders.com/courses/best-fullstack-nodejs-training-in-lucknow" },
+      { label: "Final Year Project for Diploma (CS Branch)", href: "https://thedigicoders.com/courses/final-year-project-for-diploma-cs-branch" },
     ],
   },
   {
@@ -78,6 +84,12 @@ const columns = [
       { label: "Best Company for Dot Net Core Training in Kanpur", href: "https://thedigicoders.com/courses/best-company-for-dot-net-core-training-in-Kanpur" },
       { label: "100% Job Assistance Program in Kanpur", href: "https://thedigicoders.com/courses/100-job-assistance-program-in-Kanpur" },
       { label: "Civil Engineering Summer Training", href: "https://thedigicoders.com/courses/civil-engineering-summer-training" },
+      { label: "Best Companies for Apprenticeship Training", href: "https://thedigicoders.com/courses/best-companies-for-apprenticeship-training" },
+      { label: "Best Company for MERN Stack Training in Kanpur", href: "https://thedigicoders.com/courses/best-company-for-mern-stack-training-in-lucknow" },
+      { label: "Best Company for IOT Training in Kanpur", href: "https://thedigicoders.com/courses/best-company-for-iot-training-in-lucknow" },
+      { label: "Digital Marketing Training Course in Kanpur", href: "https://thedigicoders.com/courses/digital-marketing-training-course-in-lucknow" },
+      { label: "Best Company for Data Analytics Training in Kanpur", href: "https://thedigicoders.com/courses/best-company-for-data-analytics-training-in-lucknow" },
+      { label: "Final Year Project for B.Tech (CS Branch)", href: "https://thedigicoders.com/courses/final-year-project-for-btech-cs-branch" },
     ],
   },
   {
@@ -95,6 +107,13 @@ const columns = [
       { label: "AI Training in Kanpur", href: "https://thedigicoders.com/courses/ai-training-in-Kanpur" },
       { label: "Machine Learning in Kanpur", href: "https://thedigicoders.com/courses/machine-learning-in-Kanpur" },
       { label: "Graphics Designing in Kanpur", href: "https://thedigicoders.com/courses/graphics-designing-in-Kanpur" },
+      { label: "Data Science Training in Kanpur", href: "https://thedigicoders.com/courses/data-science-training-in-lucknow" },
+      { label: "Web Designing Training in Kanpur", href: "https://thedigicoders.com/courses/web-designing-training-in-lucknow" },
+      { label: "Node JS Training in Kanpur", href: "https://thedigicoders.com/courses/node-js-training-in-lucknow" },
+      { label: "Ethical Hacking Training in Kanpur", href: "https://thedigicoders.com/courses/ethical-hacking-training-in-lucknow" },
+      { label: "Best Online Summer Training for CS Students", href: "https://thedigicoders.com/courses/best-online-summer-training-for-cs-students" },
+      { label: "Best Company for Online Apprenticeship Training", href: "https://thedigicoders.com/courses/best-company-for-online-apprenticeship-training" },
+      { label: "Final Year Project for MCA Students", href: "https://thedigicoders.com/courses/final-year-project-for-mca-students" },
     ],
   },
   {
@@ -112,6 +131,12 @@ const columns = [
       { label: "Top AI Course in Kanpur", href: "https://thedigicoders.com/courses/top-ai-course-in-Kanpur" },
       { label: "Top Machine Learning Course in Kanpur", href: "https://thedigicoders.com/courses/top-machine-learning-course-in-Kanpur" },
       { label: "Top Graphics Designing Course in Kanpur", href: "https://thedigicoders.com/courses/top-graphics-designing-course-in-Kanpur" },
+      { label: "Top Data Science Course in Kanpur", href: "https://thedigicoders.com/courses/top-data-science-course-in-lucknow" },
+      { label: "Top Web Designing Course in Kanpur", href: "https://thedigicoders.com/courses/top-web-designing-course-in-lucknow" },
+      { label: "Top MSSQL Course in Kanpur", href: "https://thedigicoders.com/courses/top-mssql-course-in-lucknow" },
+      { label: "Top React JS Course in Kanpur", href: "https://thedigicoders.com/courses/top-react-js-course-in-lucknow" },
+      { label: "Top Flutter App Development Course in Kanpur", href: "https://thedigicoders.com/courses/top-flutter-app-development-course-in-lucknow" },
+      { label: "Final Year Project for BCA Students", href: "https://thedigicoders.com/courses/final-year-project-for-bca-students" },
     ],
   },
 ];
@@ -169,18 +194,50 @@ const Footer = () => {
     <footer className="font-sans" style={{ background: 'linear-gradient(180deg, #0d1b2a 0%, #0a1520 100%)' }}>
 
       {/* ── Top Announcement Bar ── */}
-      <div className="py-3 text-center text-white text-sm font-semibold tracking-wide overflow-hidden"
+      <div className="py-3 text-center text-white text-sm font-semibold tracking-wide overflow-hidden relative"
         style={{ background: 'linear-gradient(90deg, #0d1b2a, #1a2f1a, #0d1b2a)' }}>
-        <div className="absolute top-0 left-0 right-0 h-[3px]"
-          style={{ background: 'linear-gradient(to right, #ff8c00, #2e7d32, #ff8c00)' }} />
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 px-4">
-          <span className="text-yellow-400 flex items-center gap-2"><FaTrophy className="text-amber-800 text-lg"  /> UP's #1 Software Training Company</span>
+
+          <span className="text-yellow-400 flex items-center gap-2">
+            <FaTrophy className="text-amber-800 text-lg" />
+            UP's #1 Software Training Company
+          </span>
           <span className="opacity-30 hidden sm:inline">|</span>
-          <span className="text-gray-300">1000+ Students Trained</span>
+          <span className="text-gray-300">21000+ Students Trained</span>
           <span className="opacity-30 hidden sm:inline">|</span>
-          <span className="text-green-400 flex items-center gap-1"><FaPhone className="text-green-500 text-lg rotate-100" /> +91 9198483820</span>
+          <a  href="tel:+919198483820"
+            className="text-green-400 flex items-center gap-1 hover:text-green-300 transition-colors"
+          >
+            <FaPhone className="text-green-500 text-lg rotate-100" />
+            +91 9198483820
+          </a>
           <span className="opacity-30 hidden sm:inline">|</span>
-          <span className="text-gray-300">Lucknow &amp; Kanpur &amp; Gorakhpur</span>
+          <span className="text-gray-300 flex items-center gap-2">
+            <a  href="https://www.google.com/maps/place/DigiCoders+Technologies+Private+Limited,+Best+Software%2FWebsite%2FMobile+App+Development+Company+in+Lucknow/@26.9046469,80.9470183,17z/data=!3m1!4b1!4m6!3m5!1s0x399bfd90f852511b:0xea3004cdf494ecbb!8m2!3d26.9046421!4d80.9495932!16s%2Fg%2F11h37gc4sq?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white underline underline-offset-2 decoration-dotted transition-colors"
+            >
+              Lucknow
+            </a>
+            <span className="opacity-30">&amp;</span>
+            <a  href="https://www.google.com/maps/place/DigiCoders+Technologies+-+Kanpur/@26.4092157,80.3252139,17z/data=!3m1!4b1!4m6!3m5!1s0x399c47cc6b1e061f:0xc3429fe37a9666a7!8m2!3d26.4092109!4d80.3277888!16s%2Fg%2F11z6sssxht?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white underline underline-offset-2 decoration-dotted transition-colors"
+            >
+              Kanpur
+            </a>
+            <span className="opacity-30">&amp;</span>
+            <a  href="https://www.google.com/maps/search/software+training+institute+Gorakhpur"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white underline underline-offset-2 decoration-dotted transition-colors"
+            >
+              Gorakhpur
+            </a>
+          </span>
+
         </div>
       </div>
 
@@ -199,20 +256,20 @@ const Footer = () => {
         {/* Col 1: Brand */}
         <div className="w-full">
           <img src={logo} alt="Footer logo" />
-          <p className="text-sm text-gray-400 leading-relaxed mb-5">
+          <p className="text-sm text-gray-100 leading-relaxed mb-5">
             Uttar Pradesh's leading IT training company — empowering students with industry-ready
-            skills in Lucknow and Kanpur since 2017. 7+ years, 1000+ lives changed.
+            skills in Kanpur since 2017. 7+ years, 1000+ lives changed.
           </p>
 
           {/* Social Icons */}
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-6 ">
             {socialLinks.map((s) => {
               const Icon = s.icon;
               return (
                 <a key={s.title} href={s.href}
                   target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer" title={s.title}
-                  className="w-9 h-9 rounded-xl flex items-center justify-center text-gray-400 border transition-all duration-200 hover:-translate-y-0.5 hover:text-white hover:border-transparent"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center text-gray-100 border transition-all duration-200 hover:-translate-y-0.5 hover:text-white hover:border-transparent"
                   style={{ background: 'rgba(255,255,255,0.05)', borderColor: 'rgba(255,255,255,0.1)' }}
                   onMouseEnter={e => { e.currentTarget.style.background = s.hoverBg; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; }}
@@ -280,7 +337,7 @@ const Footer = () => {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-start gap-1.5 text-gray-300 text-sm leading-snug transition-colors duration-200 hover:text-orange-400"
+                      className="group flex items-start gap-1.5 text-gray-100 text-sm leading-snug transition-colors duration-200 hover:text-orange-400"
                     >
                       <span className="mt-0.5 text-orange-500 font-bold text-base leading-none transition-colors duration-200 group-hover:text-orange-400">
                         &gt;
@@ -302,7 +359,7 @@ const Footer = () => {
           <NavLink to="/" className="font-bold transition-colors hover:text-orange-300" style={{ color: '#ff8c00' }}>
             DigiCoders Technologies Pvt. Ltd.
           </NavLink>
-          {" "}— All Rights Reserved. Made with ❤️ in Lucknow &amp; Kanpur.
+          {" "}— All Rights Reserved. Made with ❤️ in Kanpur .
         </p>
         <div className="flex gap-5">
           {["Privacy Policy", "Terms of Use", "Sitemap", "Register"].map((link) => (

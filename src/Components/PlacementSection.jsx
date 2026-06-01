@@ -154,18 +154,33 @@ const placements2 = [
 
 // ─── Companies Data ────────────────────────────────────────────────────────────
 const companies = [
-  { name: "Infosys",       color: "#e25400" },
+  { name: "Stacker",       color: "#e25400" },
   { name: "TCS",           color: "#007a3b" },
-  { name: "Wipro",         color: "#e25400" },
-  { name: "HCL Tech",      color: "#007a3b" },
-  { name: "Accenture",     color: "#e25400" },
-  { name: "Capgemini",     color: "#007a3b" },
-  { name: "Tech Mahindra", color: "#e25400" },
+  { name: "Founder Code",         color: "#e25400" },
+  { name: "UP24NEWS",        color: "#007a3b" },
+  { name: "Tech Mahindra",     color: "#e25400" },
+  { name: "VVDN",           color: "#007a3b" },
+  { name: "CodeCrafter", color: "#e25400" },
   { name: "IBM",           color: "#007a3b" },
-  { name: "Cognizant",     color: "#e25400" },
-  { name: "Mindtree",      color: "#007a3b" },
-  { name: "Persistent",    color: "#e25400" },
-  { name: "Hexaware",      color: "#007a3b" },
+  { name: "Career Alfa",     color: "#e25400" },
+  { name: "Chetu",      color: "#007a3b" },
+  { name: "Coders Tech",    color: "#e25400" },
+  { name: "Info Tech",      color: "#007a3b" },
+  { name: "WEBSOFY",      color: "#e25400" },
+  { name: "Genpact",      color: "#007a3b" },
+  { name: "HCL",      color: "#e25400" },
+  { name: "ICICI Bank",      color: "#007a3b" },
+  { name: "Infosys",      color: "#e25400" },
+  { name: "IPX",      color: "#007a3b" },
+  { name: "Orkes",      color: "#e25400" },
+  { name: "IndiCorp",      color: "#007a3b" },
+  { name: "DXC",      color: "#e25400" },
+  { name: "Singsys",      color: "#007a3b" },
+  { name: "Sysfo",      color: "#e25400" },
+  { name: "EXL",      color: "#007a3b" },
+  { name: "Edoro",      color: "#e25400" },
+  { name: "CodingClave",      color: "#007a3b" },
+  { name: "TeleIndia",      color: "#e25400" },
 ];
 
 // ─── PlacementCard ─────────────────────────────────────────────────────────────
@@ -322,7 +337,7 @@ const PlacementSection = () => {
 
           <div
             className="flex w-max py-1"
-            style={{ animation: "marqueeLeft 18s linear infinite" }}
+            style={{ animation: "marqueeLeft 45s linear infinite" }}
             onMouseEnter={(e) => (e.currentTarget.style.animationPlayState = "paused")}
             onMouseLeave={(e) => (e.currentTarget.style.animationPlayState = "running")}
           >

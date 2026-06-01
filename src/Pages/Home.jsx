@@ -4,13 +4,9 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { ChevronRight, Users, Clock, TrendingUp, GraduationCap, Building2, Award, BookOpen, Zap } from 'lucide-react';
 
-import about from '../../public/Images/hero1.jpg'
-import hero2 from '../../public/Images/hero2.jpg'
-import hero3 from '../../public/Images/hero3.jpg'
-import aboutImage from '../../public/Images/about.jpg'
+import AboutImage from '/Images/kanpur-branch-digicoders.jpg'
 import ExpertSection from '../Components/ExpertSection';
 import ServicesSection from '../Components/ServicesSection';
-// import HeroSlider from '../Components/HeroSlider';
 import HeroSection from '../Components/HeroSection'
 import TrainingSection from '../Components/TrainingSection';
 import WhyChooseUs from '../Components/WhyChooseUs';
@@ -60,9 +56,9 @@ function StatCard({ stat, index, inView }) {
 
 // ── Stats: Orange = primary CTA, Green = success/placement, Navy = trust
 const statsData = [
-  { value: 1000, suffix: '+', label: 'Students Trained',  icon: Users,      color: '#ff8c00' },
-  { value: 7,    suffix: '+', label: 'Years Experience',  icon: Clock,      color: '#0d1b2a' },
-  { value: 500,  suffix: '+', label: 'Placements Done',   icon: TrendingUp, color: '#2e7d32' },
+  { value: 21000, suffix: '+', label: 'Students Trained',  icon: Users,      color: '#ff8c00' },
+  { value: 8,    suffix: '+', label: 'Years Experience',  icon: Clock,      color: '#0d1b2a' },
+  { value: 20000,  suffix: '+', label: 'Placements Done',   icon: TrendingUp, color: '#2e7d32' },
   { value: 50,   suffix: '+', label: 'Hiring Partners',   icon: Building2,  color: '#e65100' },
 ]
 
@@ -92,10 +88,7 @@ const Home = () => {
 
   return (
     <>
-
-      {/* HERO SECTION */}
-        {/* <HeroSlider/> */}
-        <HeroSection/>
+      <HeroSection/>
 
       {/* STATS SECTION */}
       <section className="py-14 px-6 bg-white" ref={statsRef}>
@@ -113,24 +106,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/*RECENT PLACEMENT & marquee slider */}
       <PlacementSection/>
-
-      {/* EXPERT SECTION  */}
-      
-      <div className='px-4 md:px-10 bg-white'>
-        <ExpertSection />
-      </div>
-
-      {/*  TRAINING CARDS SECTION  */}
-      <div className='px-4 md:px-10 pt-10 bg-white'>
-        <TrainingSection />
-      </div>
-
-      {/*  WHY CHOOSE US */}
-      <div className='md:px-10 bg-white'>
-        <WhyChooseUs/>
-      </div>
+      <ExpertSection />
+      <TrainingSection />
+      <WhyChooseUs/>
 
       {/*  ABOUT SECTION  */}
       <section className="py-10 bg-white" ref={aboutRef}>
@@ -151,7 +130,7 @@ const Home = () => {
             style={aboutInView ? { animation: 'slideRight 0.7s ease forwards', opacity: 0 } : { opacity: 0 }}
           >
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={aboutImage} alt="About DigiCoders" className="w-full h-auto md:h-[420px] object-cover" />
+              <img src={AboutImage} alt="About DigiCoders" className="w-full h-auto md:h-[440px] object-cover" />
               {/* Floating badge — navy bg with orange accent */}
               <div className="absolute bottom-5 left-5 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center"
@@ -172,10 +151,9 @@ const Home = () => {
             className="w-full md:w-1/2"
             style={aboutInView ? { animation: 'slideLeft 0.7s ease forwards 0.1s', opacity: 0 } : { opacity: 0 }}
           >
-            <p className="text-gray-500 leading-relaxed mb-6 text-justify">
-              DigiCoders Technologies is Uttar Pradesh's leading software training company, empowering
-              students and professionals with industry-ready skills. With branches in Lucknow and Kanpur,
-              we have trained 1000+ students and placed 500+ in top IT companies over 7+ years of excellence.
+            <p className="text-md text-gray-500 leading-relaxed mb-6 text-justify">
+              DigiCoders Technologies is a leading IT training institute in Kanpur that helps students build successful careers through industrial training, internships, and live project-based learning. <br />
+              The company also provides web development, mobile app development, and digital marketing services while training students in industry-relevant technologies such as Python, Full Stack Development, Java, and PHP.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -224,10 +202,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/*  BRANCHES SECTION */}
-      <BranchesSection/>
 
-      {/* SERVICES SECTION */}
+      <BranchesSection/>
       <ServicesSection />
 
       {/* FINAL CTA SECTION */}

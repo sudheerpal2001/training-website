@@ -4,7 +4,6 @@ import { MdLocationOn, MdEmail, MdAccessTime } from "react-icons/md";
 import { useEffect, useRef, useState } from "react";
 
 import lucknowBranch from '/Images/lucknow-head-office-digicoders.jpg'
-import kanpurBranch from '/Images/kanpur-branch-digicoders.jpg'
 import GorakhpurBranch from '/Images/digicoders-gorakhpur-branch.jpg'
 
 
@@ -15,15 +14,6 @@ const branches = [
     location:
       "2nd Floor, B-36, Sector O, Near Ram Ram Bank Chauraha, Aliganj, Lucknow UP 226021",
     contact: "+91 9198483820",
-    email: "info@thedigicoders.com",
-    hours: "Mon-Sat: 10:00 AM - 7:00 PM",
-  },
-  {
-    city: "Kanpur",
-    image: kanpurBranch,
-    location:
-      "340, S-Block, near Annapoorna Hospital, Shehnai Chauraha, Yasodha Nagar, Kanpur, 208011",
-    contact: "+91 6394 296 293",
     email: "info@thedigicoders.com",
     hours: "Mon-Sat: 10:00 AM - 7:00 PM",
   },
@@ -77,13 +67,13 @@ const BranchCard = ({ image, city, location, contact, email, hours, index }) => 
         transform: inView ? "translateY(0px)" : "translateY(48px)",
         transition: `opacity 0.6s ease ${animationDelay}, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) ${animationDelay}`,
         flex: "1 1 0",
-        minWidth: "260px",
-        maxWidth: "380px",
+        minWidth: "320px",
+        maxWidth: "450px",
       }}
       className="bg-white rounded-2xl shadow-md overflow-hidden border border-orange-100"
     >
       {/* Image */}
-      <div className="relative overflow-hidden h-56">
+      <div className="relative overflow-hidden h-62">
         <img
           src={image}
           alt={city}
@@ -112,7 +102,7 @@ const BranchCard = ({ image, city, location, contact, email, hours, index }) => 
       {/* Content */}
       <div className="p-5">
         <h2 className="text-xl font-bold text-gray-900 mb-1">{city} Branch</h2>
-        <div className="mb-3 h-[2px] w-38 rounded-full bg-gradient-to-r from-orange-500 to-transparent" />
+        <div className="mb-3 h-[2px] w-42 rounded-full bg-gradient-to-r from-orange-500 to-transparent" />
 
         {/* Info rows */}
         <div className="flex flex-col gap-3">
